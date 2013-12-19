@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<root>
+
+  <!--
+    define application
+    https://github.com/tekezo/KeyRemap4MacBook/blob/master/src/core/server/Resources/appdef.xml
+  -->
+
+  <appdef>
+    <appname>ECLIPSE</appname>
+    <equal>org.pqrs.unknownapp.Eclipse</equal>
+  </appdef>
+
+  <appdef>
+    <appname>TERM</appname>
+    <equal>com.apple.Terminal</equal>
+    <equal>org.macosforge.xquartz.X11</equal>
+  </appdef>
+
+  <!-- define remap rules -->
+
+  <item>
+    <name>Swap Command with Control in RDC</name>
+    <identifier>private.app_rdc_swap_cmd_and_ctrl</identifier>
+    <only>REMOTEDESKTOPCONNECTION</only>
+    <autogen>
+        --KeyToKey--
+        KeyCode::COMMAND_L,
+        KeyCode::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CONTROL_L,
+        KeyCode::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L,
+        KeyCode::HOME
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L,
+        KeyCode::END
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Swap Command with Control (except Cmd+Tab, Cmd+Space) in Terminal</name>
+    <identifier>private.app_terminal_swap_cmd_and_ctrl</identifier>
+    <only>TERM</only>
+    <autogen>
+        --KeyToKey--
+        KeyCode::COMMAND_L,
+        KeyCode::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CONTROL_L,
+        KeyCode::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::TAB, ModifierFlag::CONTROL_L,
+        KeyCode::TAB, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::TAB, ModifierFlag::COMMAND_L,
+        KeyCode::TAB, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::SPACE, ModifierFlag::CONTROL_L,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::SPACE, ModifierFlag::COMMAND_L,
+        KeyCode::SPACE, ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Swap Command+Space with Control+Space in Eclipse</name>
+    <identifier>private.app_eclipse_swap_cmd-space_and_ctrl-space</identifier>
+    <only>ECLIPSE</only>
+    <autogen>
+        --KeyToKey--
+        KeyCode::SPACE, ModifierFlag::COMMAND_L,
+        KeyCode::SPACE, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::SPACE, ModifierFlag::CONTROL_L,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Home/End to Command+Left/Command+Right (except RDC)</name>
+    <identifier>private.home_end</identifier>
+    <not>REMOTEDESKTOPCONNECTION</not>
+    <autogen>
+        --KeyToKey--
+        KeyCode::HOME,
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::END,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+    </autogen>
+  </item>
+
+</root>
