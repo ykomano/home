@@ -27,6 +27,7 @@ alias ll='ls -lhG'
 alias ssh='TERM=xterm-256color ssh'
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias printunicode='python -c "import sys; print sys.argv[1].decode(\"unicode-escape\")"'
 alias vimdiff='vimdiff -c "windo set wrap"'
 
 complete -d cd
