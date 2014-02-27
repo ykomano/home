@@ -3,7 +3,8 @@ SRC_DIR=$(PREFIX_DIR)/sources
 BIN_DIR=$(PREFIX_DIR)/bin
 LIB_DIR=$(PREFIX_DIR)/lib
 
-TMUX=tmux-1.8.tar.gz
+TMUX_VERSION=1.9
+TMUX=tmux-$(TMUX_VERSION)a.tar.gz
 LIBEVENT=libevent-2.0.21-stable.tar.gz
 
 $(BIN_DIR)/tmux: $(LIB_DIR)/libevent.a $(SRC_DIR)/$(TMUX)
@@ -17,7 +18,7 @@ $(BIN_DIR)/tmux: $(LIB_DIR)/libevent.a $(SRC_DIR)/$(TMUX)
 $(SRC_DIR)/$(TMUX):
 	mkdir -p $(SRC_DIR) && \
 	cd $(SRC_DIR) && \
-	curl -O http://netcologne.dl.sourceforge.net/project/tmux/tmux/tmux-1.8/$(TMUX)
+	curl -O http://jaist.dl.sourceforge.net/project/tmux/tmux/tmux-$(TMUX_VERSION)/$(TMUX)
 
 $(LIB_DIR)/libevent.a: $(SRC_DIR)/$(LIBEVENT)
 	cd $(SRC_DIR) && \
