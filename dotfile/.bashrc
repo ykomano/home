@@ -3,7 +3,18 @@ if [ -f /etc/bashrc ]; then
 fi
 
 git_branch() {
-    git branch 2>&1 | sed -n 's/^\* (*\([^)]*\))*$/(\1)/gp'
+    git branch 2>/dev/null | sed -n 's/^\* (*\([^)]*\))*$/(\1)/gp'
+}
+git_stash() {
+    COUNT=`git stash list 2>/dev/null | wc -l | sed 's/^ *//'`
+    if [ $COUNT -gt 0 ]; then
+        echo -n "($COUNT)"
+    fi
+}
+git_status() {
+    if [ `git status -s 2>/dev/null | grep -v -c -e "^??"` -gt 0 ]; then
+        echo -n "(dirty)"
+    fi
 }
 
 export LANG=ja_JP.UTF-8
@@ -19,7 +30,7 @@ export EDITOR=vi
 export HISTSIZE=10000
 export HISTCONTROL=erasedups
 export PROMPT_COMMAND='history -a; history -c; history -r'
-export PS1='\h:\W\[\e[0;32m\]$(git_branch)\[\e[0;0m\] \$ '
+export PS1='\h:\W\[\e[0;32m\]$(git_branch)$(git_stash)$(git_status)\[\e[0;0m\] \$ '
 
 alias grep='grep --color=auto -I'
 alias less='/usr/share/vim/vim73/macros/less.sh'
