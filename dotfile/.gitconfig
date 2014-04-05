@@ -1,0 +1,11 @@
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+	pager = false
+[core]
+	pager = /usr/share/vim/vim73/macros/less.sh
+[diff]
+	external = git-diff.sh
+[pager]
+	diff =
