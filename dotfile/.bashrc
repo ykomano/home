@@ -4,7 +4,7 @@ fi
 
 git_branch() {
     git status >/dev/null 2>&1 || return
-    git status | awk 'BEGIN{ printf "(" } /# On branch/{ printf $4 } /# HEAD/{ printf $3" "$4" "$5 } /# Changes/{ printf "*" } END{ printf ")" }'
+    git status | awk 'BEGIN{ printf "(" } /^On branch/{ printf $3 } /^HEAD/{ printf $2" "$3" "$4 } /^Changes/{ printf "*" } END{ printf ")" }'
 }
 git_stash() {
     COUNT=`git stash list 2>/dev/null | wc -l | sed 's/^ *//'`
