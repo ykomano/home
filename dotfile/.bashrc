@@ -29,7 +29,6 @@ export PROMPT_COMMAND='history -a; history -c; history -r'
 export PS1='\h:\W\[\e[0;32m\]$(git_branch)$(git_stash)\[\e[0;0m\] \$ '
 
 alias grep='grep --color=auto -I'
-alias less='/usr/share/vim/vim73/macros/less.sh'
 alias ll='ls -lhG'
 alias ssh='TERM=xterm-256color ssh'
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
