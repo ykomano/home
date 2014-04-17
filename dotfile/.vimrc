@@ -14,6 +14,7 @@ set autoindent
 set backspace=indent,eol,start
 set diffopt=filler,iwhite,vertical
 set display=uhex
+set clipboard=unnamed,autoselect
 set expandtab
 set fileformat=unix
 set fileformats=unix,dos
@@ -37,7 +38,3 @@ match ZenkakuSpace /　/
 
 "clear highlight
 nnoremap <ESC><ESC> :nohlsearch<CR>
-
-"copy to clipboard
-command! Pbcopy :call system("pbcopy", @0)
-
