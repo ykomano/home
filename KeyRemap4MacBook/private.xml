@@ -9,6 +9,7 @@
   <appdef>
     <appname>ECLIPSE</appname>
     <equal>org.pqrs.unknownapp.Eclipse</equal>
+    <equal>org.eclipse.platform.ide</equal>
   </appdef>
 
   <appdef>
