@@ -28,6 +28,16 @@ export HISTCONTROL=erasedups
 export PROMPT_COMMAND='history -a; history -c; history -r'
 export PS1='\h:\W\[\e[0;32m\]$(git_branch)$(git_stash)\[\e[0;0m\] \$ '
 
+alias git-branch='git branch -a'
+alias git-diff='git diff'
+alias git-diff-cached='git diff --cached'
+alias git-fetch='git fetch --all --prune'
+alias git-log='git log'
+alias git-log-first-parent='git log --first-parent'
+alias git-log-graph='git log --graph'
+alias git-pull='git pull'
+alias git-status='git status'
+
 alias grep='grep --color=auto -In'
 alias ll='ls -Ghl'
 alias ls='ls -Gh'
