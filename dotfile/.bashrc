@@ -7,7 +7,7 @@ git_branch() {
     git status | awk 'BEGIN{ printf "(" } /^On branch/{ printf $3 } /^HEAD/{ printf $2" "$3" "$4 } /^Changes/{ printf "*" } END{ printf ")" }'
 }
 git_stash() {
-    COUNT=`git stash list 2>/dev/null | wc -l | sed 's/^ *//'`
+    COUNT=`git stash list 2>/dev/null | grep -c ".*"`
     if [ $COUNT -gt 0 ]; then
         echo -n "($COUNT)"
     fi
