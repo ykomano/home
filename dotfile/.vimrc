@@ -28,7 +28,7 @@ set list
 set listchars=tab:>\ ,trail:-
 set mouse=a
 set number
-set statusline=%<%f\ [%1(%M%)][%2(%R%)]%h%w[%{&fenc!=''?&fenc:&enc}][%{&ff}]%=%l/%L(%4P),%3c\ %3b,0x%02B
+set statusline=%<%f\ [%{&readonly?'RO':'RW'}][%{&fenc!=''?&fenc:&enc}][%{&ff}]%y[%1(%M%)]%=%l/%L(%3P),%3c,\ %03b,0x%02B
 set tabstop=4
 set whichwrap=b,s,h,l,<,>,~,[,]
 
