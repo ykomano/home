@@ -35,7 +35,7 @@ alias git-fetch='git fetch --all --prune'
 alias git-log='git log'
 alias git-log-first-parent='git log --first-parent'
 alias git-log-graph='git log --graph'
-alias git-pull='git pull'
+alias git-pull='git pull --prune'
 alias git-status='git status'
 
 alias grep='grep --color=auto -In'
