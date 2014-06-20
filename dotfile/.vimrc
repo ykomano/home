@@ -22,6 +22,7 @@ set fileencoding=utf-8
 set fileencodings=utf-8,cp932
 set history=10000
 set hlsearch
+set ignorecase
 set incsearch
 set laststatus=2
 set list
