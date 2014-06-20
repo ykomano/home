@@ -2,6 +2,10 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+if [ -n "${DISPLAY}" ]; then
+    /opt/X11/bin/xset r rate 500 45
+fi
+
 git_branch() {
     git status >/dev/null 2>&1 || return
     git status | awk 'BEGIN{ printf "(" } /^On branch/{ printf $3 } /^HEAD/{ printf $2" "$3" "$4 } /^Changes/{ printf "*" } END{ printf ")" }'
