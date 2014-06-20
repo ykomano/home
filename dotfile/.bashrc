@@ -2,8 +2,8 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-if [ -n "${DISPLAY}" ]; then
-    /opt/X11/bin/xset r rate 500 45
+if [ $(pgrep -U `whoami` Xquartz) ]; then
+  /opt/X11/bin/xset r rate 500 45
 fi
 
 git_branch() {
