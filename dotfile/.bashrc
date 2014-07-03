@@ -20,6 +20,7 @@ git_stash() {
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
+export ANDROID_HOME=$HOME/local/android-sdk-macosx
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 export RUBY_HOME=$HOME/local/ruby/2.0.0/bin
 export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
@@ -38,9 +39,9 @@ alias git-branch='git branch -a'
 alias git-diff='git diff'
 alias git-diff-cached='git diff --cached'
 alias git-fetch='git fetch --all --prune'
-alias git-log='git log'
-alias git-log-first-parent='git log --first-parent'
-alias git-log-graph='git log --graph'
+alias git-log='git log -n 100'
+alias git-log-first-parent='git log -n 100 --first-parent'
+alias git-log-graph='git log -n 100 --graph'
 alias git-pull='git pull --prune'
 alias git-status='git status'
 
