@@ -2,10 +2,6 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-if [ $(pgrep -U `whoami` Xquartz) ]; then
-  /opt/X11/bin/xset r rate 500 45
-fi
-
 git_branch() {
     git status >/dev/null 2>&1 || return
     git status | awk 'BEGIN{ printf "(" } /^On branch/{ printf $3 } /^HEAD/{ printf $2" "$3" "$4 } /^Changes/{ printf "*" } END{ printf ")" }'
@@ -60,6 +56,10 @@ complete -d rmdir
 complete -c pgrep
 complete -c man
 complete -c which
+
+if [ -z "$SSH_CONNECTION" ] && [ $(pgrep -U `whoami` Xquartz) ]; then
+  /opt/X11/bin/xset r rate 500 45
+fi
 
 if [ -z "$TMUX" ]; then
   if [ -z "`tmux ls 2>/dev/null | grep -v attached`" ]; then
