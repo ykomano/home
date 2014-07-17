@@ -60,3 +60,11 @@ complete -d rmdir
 complete -c pgrep
 complete -c man
 complete -c which
+
+if [ -z "$TMUX" ]; then
+  if [ -z "`tmux ls 2>/dev/null | grep -v attached`" ]; then
+    tmux
+  else
+    tmux ls
+  fi
+fi
