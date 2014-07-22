@@ -16,5 +16,5 @@ $(BIN_DIR)/python: $(SRC_DIR)/$(PYTHON)
 $(SRC_DIR)/$(PYTHON):
 	mkdir -p $(SRC_DIR) && \
 	cd $(SRC_DIR) && \
-	curl -O http://www.python.org/ftp/python/3.3.3/$(PYTHON)
+	curl -O https://www.python.org/ftp/python/3.3.3/$(PYTHON)
 
