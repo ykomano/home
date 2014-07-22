@@ -8,7 +8,7 @@ $(BIN_DIR)/urxvt: $(SRC_DIR)/$(URXVT)
 	cd $(SRC_DIR) && \
 	tar jxvf $(URXVT) && \
 	cd $(URXVT:%.tar.bz2=%) && \
-	./configure --prefix=$(PREFIX_DIR) --enable-256-color --disable-pixbuf --disable-perl --disable-xim --with-codesets=jp,jp_ext && \
+	CPPFLAGS="-I/opt/X11/include/" ./configure --prefix=$(PREFIX_DIR) --enable-256-color --disable-pixbuf --disable-perl && \
 	make && \
 	mv INSTALL _INSTALL && \
 	make install
