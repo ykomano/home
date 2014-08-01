@@ -3,7 +3,7 @@
 (define prime-custom-display-form? #f)
 (define skk-show-annotation? #t)
 (define skk-show-annotation-in-preedit? #f)
-(define enable-annotation? #t)
+(define enable-annotation? #f)
 (define annotation-agent 'osx-dcs)
 (define eb-enable-for-annotation? #f)
 (define annotation-eb-dic-path "/Library/Frameworks/UIM.framework/Versions/1.9.0/share/dict")
