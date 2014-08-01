@@ -1,0 +1,8 @@
+(define prime-nr-candidate-max 10)
+(define prime-always-show-window? #t)
+(define prime-custom-display-usage? #f)
+(define prime-custom-display-comment? #f)
+(define prime-custom-display-form? #f)
+(define prime-custom-number-selection? #f)
+(define prime-custom-app-mode-vi? #f)
+(define prime-pseudo-mode-cursor? #f)
