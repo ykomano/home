@@ -6,11 +6,13 @@ set nobackup
 set nocompatible
 set nojoinspaces
 set noswapfile
+set nowrap
 set nowrapscan
 
 "set
 set ambiwidth=double
 set autoindent
+set background=dark
 set backspace=indent,eol,start
 set diffopt=filler,iwhite,vertical
 set display=uhex
