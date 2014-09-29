@@ -28,6 +28,7 @@ export PATH=$HOME/bin:$PYTHON_HOME:$PHANTOMJS_HOME:$QT_HOME:$RUBY_HOME:/usr/loca
 export EDITOR=vi
 export HISTSIZE=10000
 export HISTCONTROL=erasedups
+export LSCOLORS=ExgxcxdxCxegedabagacad
 export PROMPT_COMMAND='history -a; history -c; history -r'
 export PS1='\h:\W\[\e[0;32m\]$(git_branch)$(git_stash)\[\e[0;0m\] \$ '
 export PAGER="$HOME/bin/vimpager"
