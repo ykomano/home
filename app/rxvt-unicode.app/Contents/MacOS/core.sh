@@ -9,5 +9,4 @@ export GTK_IM_MODULE="uim"
 
 cd
 
-FONT='-*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1'
-$HOME/bin/urxvt -geometry 100x30 -rv -fn "$FONT" -fb "$FONT" +sb -tn xterm-256color -pt OffTheSpot &
+$HOME/bin/urxvt &
