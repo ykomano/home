@@ -40,7 +40,7 @@ alias git-diff-cached='git diff --cached'
 alias git-fetch='git fetch --all --prune'
 alias git-log='git log -n 100'
 alias git-log-first-parent='git log -n 100 --first-parent'
-alias git-log-graph='git log -n 100 --graph'
+alias git-log-graph='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %d %s" --all --date=short'
 alias git-pull='git pull --prune'
 alias git-status='git status'
 
