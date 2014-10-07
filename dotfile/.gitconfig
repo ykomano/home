@@ -4,7 +4,7 @@
 	ui = true
 	pager = false
 [core]
-	pager = /usr/share/vim/vim73/macros/less.sh
+	pager = vimpager
 [diff]
 	external = git-diff.sh
 [pager]
