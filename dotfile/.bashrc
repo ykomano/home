@@ -13,7 +13,9 @@ git_stash() {
     fi
 }
 
+# for anyenv
 export ANYENV_HOME=$HOME/.anyenv/bin
+export PATH=$ANYENV_HOME:$PATH
 eval "$(anyenv init -)"
 
 export LANG=ja_JP.UTF-8
@@ -23,7 +25,7 @@ export ANDROID_HOME=$HOME/local/android-sdk-macosx
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
 export BREW_HOME=/usr/local/bin
-export PATH=$HOME/bin:$ANYENV_HOME:$BREW_HOME:$QT_HOME:$PATH
+export PATH=$HOME/bin:$BREW_HOME:$QT_HOME:$PATH
 
 export EDITOR=vi
 export HISTSIZE=10000
