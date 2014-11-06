@@ -13,17 +13,17 @@ git_stash() {
     fi
 }
 
+export ANYENV_HOME=$HOME/.anyenv/bin
+eval "$(anyenv init -)"
+
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
 export ANDROID_HOME=$HOME/local/android-sdk-macosx
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
-export RUBY_HOME=$HOME/local/ruby/2.0.0/bin
 export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
-export PHANTOMJS_HOME=$HOME/local/phantomjs/bin
-export PYTHON_HOME=$HOME/local/python/3.3.3/bin
-#export PATH=$HOME/bin:$PYTHON_HOME:$PHANTOMJS_HOME:$QT_HOME:$RUBY_HOME:$MONO_HOME:/usr/local/bin:$PATH
-export PATH=$HOME/bin:$PYTHON_HOME:$PHANTOMJS_HOME:$QT_HOME:$RUBY_HOME:/usr/local/bin:$PATH
+export BREW_HOME=/usr/local/bin
+export PATH=$HOME/bin:$ANYENV_HOME:$BREW_HOME:$QT_HOME:$PATH
 
 export EDITOR=vi
 export HISTSIZE=10000
