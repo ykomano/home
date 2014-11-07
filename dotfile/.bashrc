@@ -14,9 +14,15 @@ git_stash() {
 }
 
 # for anyenv
-export ANYENV_HOME=$HOME/.anyenv/bin
-export PATH=$ANYENV_HOME:$PATH
-eval "$(anyenv init -)"
+if [ -d "$HOME/.anyenv" ]; then
+  export ANYENV_HOME=$HOME/.anyenv/bin
+  export PATH=$ANYENV_HOME:$PATH
+  eval "$(anyenv init -)"
+
+  for XENV in `ls "$HOME/.anyenv/envs"`; do
+    export PATH=$HOME/.anyenv/envs/$XENV/shims:$PATH
+  done
+fi
 
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
