@@ -9,3 +9,5 @@
 	external = git-diff.sh
 [pager]
 	diff =
+[merge]
+	tool = vimdiff
