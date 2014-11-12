@@ -43,6 +43,7 @@ export PAGER="$HOME/bin/vimpager"
 export MANPAGER="$HOME/bin/vimmanpager"
 
 alias git-branch='git branch -a'
+alias git-clean='git clean -dfix'
 alias git-diff='git diff'
 alias git-diff-cached='git diff --cached'
 alias git-fetch='git fetch --all --prune'
