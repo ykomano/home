@@ -22,6 +22,7 @@ set fileformat=unix
 set fileformats=unix,dos
 set fileencoding=utf-8
 set fileencodings=utf-8,cp932
+set foldcolumn=2
 set history=10000
 set hlsearch
 set ignorecase
