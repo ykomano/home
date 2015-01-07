@@ -1,3 +1,3 @@
 #!/bin/sh
 source $HOME/.bashrc
-/Applications/eclipse/eclipse clean &
+/Applications/Eclipse/Eclipse.app/Contents/MacOS/eclipse clean &
