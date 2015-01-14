@@ -42,6 +42,8 @@ export PS1='\h:\W\[\e[0;32m\]$(git_branch)$(git_stash)\[\e[0;0m\] \$ '
 export PAGER="$HOME/bin/vimpager"
 export MANPAGER="$HOME/bin/vimmanpager"
 
+export MAVEN_OPTS="-Xmx512M"
+
 alias git-branch='git branch -a'
 alias git-clean='git clean -dfix'
 alias git-diff='git diff'
