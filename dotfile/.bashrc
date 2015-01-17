@@ -30,7 +30,7 @@ export LC_ALL=ja_JP.UTF-8
 export ANDROID_HOME=$HOME/local/android-sdk-macosx
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
-export BREW_HOME=/usr/local/bin
+export BREW_HOME=/usr/local/bin:/usr/local/sbin
 export PATH=$HOME/bin:$BREW_HOME:$QT_HOME:$PATH
 
 export EDITOR=vi
