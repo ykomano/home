@@ -72,10 +72,6 @@ complete -c pgrep
 complete -c man
 complete -c which
 
-if [ -z "$SSH_CONNECTION" ] && [ $(pgrep -U `whoami` Xquartz) ]; then
-  /opt/X11/bin/xset r rate 500 45
-fi
-
 if [ -z "$TMUX" ]; then
   if [ -z "`tmux ls 2>/dev/null | grep -v attached`" ]; then
     tmux
