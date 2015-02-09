@@ -17,6 +17,7 @@ set backspace=indent,eol,start
 set diffopt=filler,iwhite,vertical
 set display=uhex
 set clipboard=unnamed,autoselect
+set colorcolumn=100
 set expandtab
 set fileformat=unix
 set fileformats=unix,dos
