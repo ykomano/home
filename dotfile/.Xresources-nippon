@@ -1,0 +1,31 @@
+! Nippon Colors http://nipponcolors.com
+! The colors 0-7 are the 'normal' colors, while colors 8-15 are their 'bright' counterparts.
+!
+! Background (Kuro)
+URxvt.background: #080808
+! Foreground (Shironezumi)
+URxvt.foreground: #BDC0BA
+! Black + DarkGrey (Kuro + Keshizumi)
+URxvt.color0:  #080808
+URxvt.color8:  #434343
+! DarkRed + Red (Shinsyu + Nakabeni)
+URxvt.color1:  #AB3B3A
+URxvt.color9:  #DB4D6D
+! DarkGreen + Green (Midori + Nae)
+URxvt.color2:  #227D51
+URxvt.color10: #86C166
+! DarkYellow + Yellow (Hajizome + Kihada)
+URxvt.color3:  #DDA52D
+URxvt.color11: #FBE251
+! DarkBlue + Blue (Rurikon + Ruri)
+URxvt.color4:  #0B346E
+URxvt.color12: #005CAF
+! DarkMagenta + Magenta (Kakitsubata + Umemurasaki)
+URxvt.color5:  #622954
+URxvt.color13: #A8497A
+! DarkCyan + Cyan (Shinbashi + Mizu)
+URxvt.color6:  #0089A7
+URxvt.color14: #81C7D4
+! LightGrey + White (Nibi + Shironezumi)
+URxvt.color7:  #656765
+URxvt.color15: #BDC0BA
