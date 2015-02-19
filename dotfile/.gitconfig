@@ -2,9 +2,8 @@
 	helper = osxkeychain
 [color]
 	ui = true
-	pager = false
 [core]
-	pager = vimpager
+	pager = less -+S
 [diff]
 	external = git-diff.sh
 [pager]
