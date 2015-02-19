@@ -4,6 +4,7 @@
 	ui = true
 [core]
 	pager = less -+S
+  precomposeunicode = true
 [diff]
 	external = git-diff.sh
 [pager]
