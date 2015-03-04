@@ -28,10 +28,11 @@ export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
 export ANDROID_HOME=$HOME/local/android-sdk-macosx
+export BREW_HOME=/usr/local/bin:/usr/local/sbin
+export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java_home -v 1.7`
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
-export BREW_HOME=/usr/local/bin:/usr/local/sbin
-export PATH=$HOME/bin:$BREW_HOME:$QT_HOME:$PATH
+export PATH=$HOME/bin:$BREW_HOME:$JAVA_HOME/bin:$QT_HOME:$PATH
 
 export EDITOR=vi
 export HISTSIZE=10000
