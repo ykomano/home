@@ -114,4 +114,14 @@
     </autogen>
   </item>
 
+  <item>
+    <name>Swap '¥' with '\'</name>
+    <identifier>private.back_slash</identifier>
+    <autogen>
+        --KeyToKey--
+        KeyCode::JIS_YEN,
+        KeyCode::JIS_YEN, ModifierFlag::OPTION_L
+    </autogen>
+  </item>
+
 </root>
