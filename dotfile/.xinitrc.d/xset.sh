@@ -1,2 +1,2 @@
 #!/bin/sh
-xset r rate 700 50
+xset r rate 500 50
