@@ -1,8 +1,9 @@
-URxvt.font: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
-URxvt.boldFont: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
+!URxvt.font: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
+URxvt.font: xft:Migu 1M:pixelsize=16
+!URxvt.boldFont: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
+URxvt.boldFont: xft:Migu 1M:pixelsize=16
 !URxvt.lineSpace: 1
 URxvt.preeditType: OffTheSpot
-!URxvt.reverseVideo: True
 URxvt.saveLines: 10000
 URxvt.scrollBar: False
 URxvt.scrollTtyKeypress: True
