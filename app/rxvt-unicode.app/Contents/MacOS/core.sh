@@ -9,4 +9,4 @@ export GTK_IM_MODULE="uim"
 
 cd
 
-$HOME/bin/urxvt &
+/usr/local/bin/urxvt &
