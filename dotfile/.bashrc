@@ -65,7 +65,7 @@ alias git-fetch='git fetch --all --prune'
 alias git-log='git log -n 100'
 alias git-log-graph='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %d %s" --all --date=short'
 alias git-pull='git pull --prune'
-alias git-status='git status'
+alias git-status='git status -sb'
 
 alias less="$HOME/bin/vimpager"
 alias grep='grep --color=auto -In'
