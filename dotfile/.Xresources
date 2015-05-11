@@ -1,3 +1,4 @@
+URxvt.geometry: 156x47
 !URxvt.font: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
 URxvt.font: xft:Migu 1M:pixelsize=16
 !URxvt.boldFont: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
