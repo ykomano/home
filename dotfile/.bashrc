@@ -57,14 +57,14 @@ export MANPAGER="$HOME/bin/vimmanpager"
 
 export MAVEN_OPTS="-Xmx512M"
 
-alias git-branch='git branch -a'
-alias git-clean='git clean -dfix'
+alias git-branch='git branch --all'
+alias git-clean='git clean -d --force --interactive -x'
 alias git-diff='git diff'
 alias git-diff-cached='git diff --cached'
 alias git-fetch='git fetch --all --prune'
 alias git-log='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %s%d" --date=short'
 alias git-pull='git pull --prune'
-alias git-status='git status -sb'
+alias git-status='git status --short --branch'
 
 alias less="$HOME/bin/vimpager"
 alias grep='grep --color=auto -In'
