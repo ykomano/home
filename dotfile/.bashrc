@@ -62,7 +62,7 @@ alias git-clean='git clean -d --force --interactive -x'
 alias git-diff='git diff'
 alias git-diff-cached='git diff --cached'
 alias git-fetch='git fetch --all --prune'
-alias git-log='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %s%d" --date=short'
+alias git-log='git log --graph --date-order --pretty=format:"<%h> %ad [%an] %s%d" --date=short'
 alias git-pull='git pull --prune'
 alias git-status='git status --short --branch'
 
