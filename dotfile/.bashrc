@@ -53,7 +53,7 @@ export LSCOLORS=ExgxcxdxCxegedabagacad
 export PROMPT_COMMAND='history -a; history -c; history -r'
 export PS1='\h:\W\[\e[0;32m\]$(git_branch)$(git_stash)\[\e[0;0m\] \$ '
 export PAGER=vimpager
-export MANPAGER="$HOME/bin/vimmanpager"
+export MANPAGER="$HOME/work/home/bin/manpager.sh"
 
 export MAVEN_OPTS="-Xmx512M"
 
