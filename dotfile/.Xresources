@@ -1,10 +1,10 @@
 URxvt.geometry: 156x42
 !URxvt.font: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
-!URxvt.font: xft:Migu 1M:pixelsize=16
-URxvt.font: xft:Source Han Code JP Regular:size=10
+URxvt.font: xft:Migu 1M:pixelsize=16
+!URxvt.font: xft:Source Han Code JP R:size=11
 !URxvt.boldFont: -*-terminus ja-medium-r-*-*-16-*-*-*-*-*-iso10646-1
-!URxvt.boldFont: xft:Migu 1M:pixelsize=16
-URxvt.boldFont: xft:Source Han Code JP Regular:size=10
+URxvt.boldFont: xft:Migu 1M:pixelsize=16
+!URxvt.boldFont: xft:Source Han Code JP Regular:size=10
 !URxvt.lineSpace: 1
 !URxvt.letterSpace: -1
 URxvt.preeditType: OffTheSpot
