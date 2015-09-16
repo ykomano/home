@@ -6,7 +6,7 @@
 	pager = less -+S
   precomposeunicode = true
 [diff]
-	external = git-diff.sh
+	external = ~/work/home/bin/git-diff.sh
 [pager]
 	diff =
 [merge]
