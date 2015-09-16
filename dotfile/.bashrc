@@ -23,8 +23,8 @@ switch_java() {
   fi
 }
 
-# default is Java 1.7
-switch_java 1.7
+# default is Java 1.8
+switch_java 1.8
 
 # for anyenv
 if [ -d "$HOME/.anyenv" ]; then
