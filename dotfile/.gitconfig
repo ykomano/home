@@ -1,13 +1,5 @@
-[credential]
-	helper = osxkeychain
-[color]
-	ui = true
-[core]
-	pager = less -+S
-  precomposeunicode = true
-[diff]
-	external = git-diff.sh
-[pager]
-	diff =
-[merge]
-	tool = vimdiff
+[include]
+	path = ~/work/home/dotfile/.gitconfig-common
+[user]
+	name = ykomano
+	email = yoshikazu.komano@kii.com

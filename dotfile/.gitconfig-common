@@ -1,0 +1,13 @@
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+[core]
+	pager = less -+S
+  precomposeunicode = true
+[diff]
+	external = ~/work/home/bin/git-diff.sh
+[pager]
+	diff =
+[merge]
+	tool = vimdiff

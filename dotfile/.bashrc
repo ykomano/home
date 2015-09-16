@@ -23,8 +23,8 @@ switch_java() {
   fi
 }
 
-# default is Java 1.7
-switch_java 1.7
+# default is Java 1.8
+switch_java 1.8
 
 # for anyenv
 if [ -d "$HOME/.anyenv" ]; then
@@ -52,8 +52,8 @@ export HISTCONTROL=erasedups
 export LSCOLORS=ExgxcxdxCxegedabagacad
 export PROMPT_COMMAND='history -a; history -c; history -r'
 export PS1='\h:\W\[\e[0;32m\]$(git_branch)$(git_stash)\[\e[0;0m\] \$ '
-export PAGER="$HOME/bin/vimpager"
-export MANPAGER="$HOME/bin/vimmanpager"
+export PAGER=vimpager
+export MANPAGER="$HOME/work/home/bin/manpager.sh"
 
 export MAVEN_OPTS="-Xmx512M"
 
@@ -66,7 +66,7 @@ alias git-log='git log --graph --date-order --pretty=format:"<%h> %ad [%an] %s%d
 alias git-pull='git pull --prune'
 alias git-status='git status --short --branch'
 
-alias less="$HOME/bin/vimpager"
+alias less=vimpager
 alias grep='grep --color=auto -In'
 alias ll='ls -Ghl'
 alias ls='ls -Gh'
