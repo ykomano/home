@@ -40,7 +40,7 @@ fi
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
-export ANDROID_HOME=$HOME/local/android-sdk-macosx
+export ANDROID_HOME=/usr/local/opt/android-sdk
 export BREW_HOME=/usr/local/bin:/usr/local/sbin
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
