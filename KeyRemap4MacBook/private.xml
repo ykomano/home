@@ -98,30 +98,4 @@
     </autogen>
   </item>
 
-  <item>
-    <name>Home/End to Command+Left/Command+Right (except RDC)</name>
-    <identifier>private.home_end</identifier>
-    <not>REMOTEDESKTOPCONNECTION</not>
-    <autogen>
-        --KeyToKey--
-        KeyCode::HOME,
-        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
-    </autogen>
-    <autogen>
-        --KeyToKey--
-        KeyCode::END,
-        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
-    </autogen>
-  </item>
-
-  <item>
-    <name>Swap '¥' with '\'</name>
-    <identifier>private.back_slash</identifier>
-    <autogen>
-        --KeyToKey--
-        KeyCode::JIS_YEN,
-        KeyCode::JIS_YEN, ModifierFlag::OPTION_L
-    </autogen>
-  </item>
-
 </root>
