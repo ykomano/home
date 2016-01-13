@@ -53,3 +53,5 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 "*.gradle is groovy
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
+"*.rest is rst
+autocmd BufNewFile,BufRead *.rest set filetype=rst
