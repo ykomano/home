@@ -1,6 +1,7 @@
 URxvt.geometry: 156x42
 URxvt.font: xft:Migu 1M:pixelsize=16
 URxvt.boldFont: xft:Migu 1M:pixelsize=16
+URxvt.modifier: mod1
 URxvt.preeditType: OffTheSpot
 URxvt.saveLines: 10000
 URxvt.scrollBar: False
