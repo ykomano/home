@@ -41,10 +41,10 @@ export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
-export BREW_HOME=/usr/local/bin:/usr/local/sbin
+export BREW_HOME=/usr/local
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
-export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
-export PATH=$HOME/bin:$BREW_HOME:$JAVA_HOME/bin:$QT_HOME:$PATH
+#export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
+export PATH=$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
 export EDITOR=vi
 export HISTSIZE=10000
