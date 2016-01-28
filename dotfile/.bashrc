@@ -44,7 +44,8 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 export BREW_HOME=/usr/local
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 #export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
-export PATH=$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
+export GOROOT=/usr/local/opt/go
+export PATH=$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
 export EDITOR=vi
 export HISTSIZE=10000
