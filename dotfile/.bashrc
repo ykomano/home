@@ -27,7 +27,7 @@ switch_java() {
 switch_java 1.8
 
 # for anyenv
-if [ -d "$HOME/.anyenv" ]; then
+if [ -d "$HOME/.anyenv" ] && [ -z $ANYENV_HOME ]; then
   export ANYENV_HOME=$HOME/.anyenv/bin
   export PATH=$ANYENV_HOME:$PATH
   eval "$(anyenv init -)"
