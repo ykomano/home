@@ -16,6 +16,7 @@
     <appname>TERM</appname>
     <equal>com.apple.Terminal</equal>
     <equal>org.macosforge.xquartz.X11</equal>
+    <equal>com.jetbrains.intellij.ce</equal>
   </appdef>
 
   <!-- define remap rules -->
