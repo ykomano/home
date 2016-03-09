@@ -17,6 +17,7 @@
     <equal>com.apple.Terminal</equal>
     <equal>org.macosforge.xquartz.X11</equal>
     <equal>com.jetbrains.intellij.ce</equal>
+    <equal>com.google.android.studio</equal>
   </appdef>
 
   <!-- define remap rules -->
