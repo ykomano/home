@@ -62,6 +62,8 @@ export MANPAGER="$HOME/work/home/bin/manpager.sh"
 
 export MAVEN_OPTS="-Xmx512M"
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 alias git-branch='git branch --all'
 alias git-clean='git clean -d --force --interactive -x'
 alias git-diff='git diff'
