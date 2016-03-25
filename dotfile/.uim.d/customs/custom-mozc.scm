@@ -7,4 +7,4 @@
 (define mozc-kana-input-method-actions '(action_mozc_roma action_mozc_kana))
 (define mozc-use-with-vi? #t)
 (define mozc-use-context-aware-conversion? #f)
-(define mozc-keyboard-type-for-kana-input-method 'jp-keyboard)
+(define mozc-keyboard-type-for-kana-input-method 'us-keyboard)
