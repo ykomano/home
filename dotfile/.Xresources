@@ -1,4 +1,4 @@
-URxvt.geometry: 156x42
+URxvt.geometry: 150x39
 URxvt.font: xft:Migu 1M:pixelsize=16
 URxvt.boldFont: xft:Migu 1M:pixelsize=16
 URxvt.modifier: mod1
