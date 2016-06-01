@@ -83,6 +83,7 @@ alias ssh='TERM=xterm-256color ssh'
 alias unixtime='date +%s'
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias vi=vim
 
 complete -d cd
 complete -d rmdir
