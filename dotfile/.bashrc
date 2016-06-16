@@ -54,7 +54,7 @@ export GO15VENDOREXPERIMENT=1
 
 export PATH=$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
-export EDITOR=vi
+export EDITOR=vim
 export HISTSIZE=10000
 export HISTCONTROL=erasedups
 export LSCOLORS=ExgxcxdxCxegedabagacad
