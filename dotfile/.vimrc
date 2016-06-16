@@ -57,4 +57,5 @@ autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 autocmd BufNewFile,BufRead *.rest set filetype=rst
 
 "vimpager opts
+let vimpager_passthrough=0
 let vimpager_scrolloff=0
