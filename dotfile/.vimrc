@@ -55,3 +55,6 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 "*.rest is rst
 autocmd BufNewFile,BufRead *.rest set filetype=rst
+
+"vimpager opts
+let vimpager_scrolloff=0
