@@ -1,9 +1,9 @@
-"color settings
+" color settings
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 syntax on
 
-"unset
+" unset
 set nobackup
 set nocompatible
 set nojoinspaces
@@ -11,7 +11,7 @@ set noswapfile
 set nowrap
 set nowrapscan
 
-"set
+" set
 set ambiwidth=double
 set autoindent
 set background=dark
@@ -42,20 +42,23 @@ set statusline=%<%f\ [%{&readonly?'RO':'RW'}][%{&fenc!=''?&fenc:&enc}][%{&ff}]%y
 set tabstop=2
 set whichwrap=b,s,h,l,<,>,~,[,]
 
-"visible zenkaku-space
+" visible zenkaku-space
 highlight ZenkakuSpace cterm=NONE ctermfg=NONE ctermbg=darkgrey
 match ZenkakuSpace /　/
 
-"clear highlight
+" clear highlight
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
-"*.md is markdown
+" cursor at center of vertical when move to next search keyword
+nnoremap n nzz
+
+" *.md is markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown
-"*.gradle is groovy
+" *.gradle is groovy
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
-"*.rest is rst
+" *.rest is rst
 autocmd BufNewFile,BufRead *.rest set filetype=rst
 
-"vimpager opts
+" vimpager opts
 let vimpager_passthrough=0
 let vimpager_scrolloff=0
