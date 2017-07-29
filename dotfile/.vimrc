@@ -33,6 +33,7 @@ set laststatus=2
 set list
 set listchars=tab:>\ ,trail:-
 set mouse=a
+set nrformats=""
 set number
 set shiftwidth=2
 set showtabline=2
