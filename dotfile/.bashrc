@@ -52,7 +52,11 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/work/go
 export GO15VENDOREXPERIMENT=1
 
-export PATH=$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
+export OPENSSL_HOME=/usr/local/opt/openssl
+export LDFLAGS="$LDFLAGS -L$OPENSSL_HOME/lib"
+export CFLAGS="$CFLAGS -I$OPENSSL_HOME/include"
+
+export PATH=$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
 export EDITOR=vim
 export HISTSIZE=10000
