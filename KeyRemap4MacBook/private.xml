@@ -7,12 +7,6 @@
   -->
 
   <appdef>
-    <appname>ECLIPSE</appname>
-    <equal>org.pqrs.unknownapp.Eclipse</equal>
-    <equal>org.eclipse.platform.ide</equal>
-  </appdef>
-
-  <appdef>
     <appname>TERM</appname>
     <equal>com.apple.Terminal</equal>
     <equal>org.macosforge.xquartz.X11</equal>
@@ -81,22 +75,6 @@
         --KeyToKey--
         KeyCode::TAB, ModifierFlag::COMMAND_L,
         KeyCode::TAB, ModifierFlag::CONTROL_L
-    </autogen>
-  </item>
-
-  <item>
-    <name>Swap Command+Space with Control+Space in Eclipse</name>
-    <identifier>private.app_eclipse_swap_cmd-space_and_ctrl-space</identifier>
-    <only>ECLIPSE</only>
-    <autogen>
-        --KeyToKey--
-        KeyCode::SPACE, ModifierFlag::COMMAND_L,
-        KeyCode::SPACE, ModifierFlag::CONTROL_L
-    </autogen>
-    <autogen>
-        --KeyToKey--
-        KeyCode::SPACE, ModifierFlag::CONTROL_L,
-        KeyCode::SPACE, ModifierFlag::COMMAND_L
     </autogen>
   </item>
 
