@@ -53,7 +53,7 @@
   </item>
 
   <item>
-    <name>Swap Command with Control (except Cmd+Tab) in Terminal</name>
+    <name>Swap Command with Control (except Cmd+Tab, Cmd+Space, Ctrl+Left, Ctrl+Right) in Terminal</name>
     <identifier>private.app_terminal_swap_cmd_and_ctrl</identifier>
     <only>TERM</only>
     <autogen>
@@ -75,6 +75,36 @@
         --KeyToKey--
         KeyCode::TAB, ModifierFlag::COMMAND_L,
         KeyCode::TAB, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::SPACE, ModifierFlag::CONTROL_L,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::SPACE, ModifierFlag::COMMAND_L,
+        KeyCode::SPACE, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+        --KeyToKey--
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
     </autogen>
   </item>
 
