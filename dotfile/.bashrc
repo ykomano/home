@@ -43,7 +43,7 @@ fi
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export BREW_HOME=/usr/local
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 #export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
@@ -56,7 +56,7 @@ export OPENSSL_HOME=/usr/local/opt/openssl
 export LDFLAGS="$LDFLAGS -L$OPENSSL_HOME/lib"
 export CFLAGS="$CFLAGS -I$OPENSSL_HOME/include"
 
-export PATH=$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
 export EDITOR=vim
 export HISTSIZE=10000
