@@ -4,7 +4,7 @@
 	ui = true
 [core]
 	pager = vimpager
-  precomposeunicode = true
+	precomposeunicode = true
 [diff]
 	external = ~/work/home/bin/git-diff.sh
 [pager]

@@ -60,6 +60,6 @@ autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 " *.rest is rst
 autocmd BufNewFile,BufRead *.rest set filetype=rst
 
-" vimpager opts
-let vimpager_passthrough=0
-let vimpager_scrolloff=0
+" vimpager opts https://github.com/rkitover/vimpager
+let g:vimpager = { 'passthrough': 0 }
+let g:less = { 'enabled': 0, 'scrolloff': 0 }
