@@ -47,16 +47,17 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export BREW_HOME=/usr/local
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 #export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
+export OPENSSL_HOME=/usr/local/opt/openssl
+export FASTLANE_HOME=$HOME/.fastlane
 
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/work/go
 export GO15VENDOREXPERIMENT=1
 
-export OPENSSL_HOME=/usr/local/opt/openssl
 export LDFLAGS="$LDFLAGS -L$OPENSSL_HOME/lib"
 export CFLAGS="$CFLAGS -I$OPENSSL_HOME/include"
 
-export PATH=$ANDROID_HOME/platform-tools:$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
+export PATH=$FASTLANE_HOME/bin:$ANDROID_HOME/platform-tools:$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
 export EDITOR=vim
 export HISTSIZE=10000
