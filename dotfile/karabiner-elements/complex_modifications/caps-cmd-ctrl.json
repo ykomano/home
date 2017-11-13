@@ -31,8 +31,8 @@
           ]
         }
       ]
-    },
-    {
+        },
+        {
       "description": "control (⌃) + tab as command (⌘) + tab (Terminal, X11, IntelliJ)",
       "manipulators": [
         {
@@ -65,8 +65,8 @@
           ]
         }
       ]
-    },
-    {
+        },
+        {
       "description": "control (⌃) + space as command (⌘) + space (Terminal, X11, IntelliJ)",
       "manipulators": [
         {
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "description": "Fallback: caps lock (⇪) as command (⌘)",
+      "description": "caps lock (⇪) as command (⌘), command (⌘) as control (⌃)",
       "manipulators": [
         {
           "type": "basic",
@@ -116,6 +116,42 @@
           "to": [
             {
               "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Terminal$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^com\\.jetbrains\\.intellij\\.ce$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Terminal$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^com\\.jetbrains\\.intellij\\.ce$"
+              ]
             }
           ]
         }
