@@ -2,7 +2,7 @@
   "title": "Use caps lock (⇪) as command (⌘) or control (⌃)",
   "rules": [
     {
-      "description": "caps lock (⇪) as control (⌃) (Terminal, X11, IntelliJ)",
+      "description": "caps lock (⇪) as control (⌃) (except with tab and spacebar) (Terminal, X11, IntelliJ)",
       "manipulators": [
         {
           "type": "basic",
@@ -29,12 +29,7 @@
               ]
             }
           ]
-        }
-      ]
         },
-        {
-      "description": "control (⌃) + tab as command (⌘) + tab (Terminal, X11, IntelliJ)",
-      "manipulators": [
         {
           "type": "basic",
           "from": {
@@ -63,12 +58,7 @@
               ]
             }
           ]
-        }
-      ]
         },
-        {
-      "description": "control (⌃) + space as command (⌘) + space (Terminal, X11, IntelliJ)",
-      "manipulators": [
         {
           "type": "basic",
           "from": {
