@@ -26,20 +26,6 @@ switch_java() {
 # default is Java 1.8
 switch_java 1.8
 
-# for anyenv
-if [ -d "$HOME/.anyenv" ]; then
-  if [ -z $ANYENV_HOME ]; then
-    export ANYENV_HOME=$HOME/.anyenv/bin
-    export PATH=$ANYENV_HOME:$PATH
-  fi
-
-  eval "$(anyenv init -)"
-
-  for XENV in `ls "$HOME/.anyenv/envs"`; do
-    export PATH=$HOME/.anyenv/envs/$XENV/shims:$PATH
-  done
-fi
-
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
@@ -57,6 +43,20 @@ export LDFLAGS="$LDFLAGS -L$OPENSSL_HOME/lib"
 export CFLAGS="$CFLAGS -I$OPENSSL_HOME/include"
 
 export PATH=$ANDROID_HOME/platform-tools:$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
+
+# for anyenv
+if [ -d "$HOME/.anyenv" ]; then
+  if [ -z $ANYENV_HOME ]; then
+    export ANYENV_HOME=$HOME/.anyenv/bin
+    export PATH=$ANYENV_HOME:$PATH
+  fi
+
+  eval "$(anyenv init -)"
+
+  for XENV in `ls "$HOME/.anyenv/envs"`; do
+    export PATH=$HOME/.anyenv/envs/$XENV/shims:$PATH
+  done
+fi
 
 export EDITOR=vim
 export HISTSIZE=10000
