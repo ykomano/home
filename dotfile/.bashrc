@@ -82,7 +82,7 @@ alias git-pull='git pull --prune'
 alias git-status='git status --short --branch'
 
 alias less=vimpager
-alias grep='grep --color=auto -In'
+alias grep='grep --color=auto -I'
 alias ll='ls -Ghl'
 alias ls='ls -Gh'
 alias printunicode='python -c "import sys; print sys.argv[1].decode(\"unicode-escape\")"'
