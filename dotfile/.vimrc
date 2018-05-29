@@ -37,7 +37,7 @@ set nrformats=""
 set number
 set shiftwidth=2
 set showtabline=2
-set smartindent
+"set smartindent
 set softtabstop=2
 set statusline=%<%f\ [%{&readonly?'RO':'RW'}][%{&fenc!=''?&fenc:&enc}][%{&ff}]%y[%1(%M%)]%=%l/%L(%3P),%3c,\ %03b,0x%02B
 set tabstop=2
