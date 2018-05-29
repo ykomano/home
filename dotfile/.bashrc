@@ -40,7 +40,7 @@ export GOPATH=$HOME/work/go
 export GO15VENDOREXPERIMENT=1
 
 export LDFLAGS="$LDFLAGS -L$OPENSSL_HOME/lib"
-export CFLAGS="$CFLAGS -I$OPENSSL_HOME/include"
+export CFLAGS="$CFLAGS -I$OPENSSL_HOME/include -I$(xcrun --show-sdk-path)/usr/include"
 
 export PATH=$ANDROID_HOME/platform-tools:$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
