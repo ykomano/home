@@ -2,7 +2,7 @@
   "title": "Use caps lock (⇪) as command (⌘) or control (⌃)",
   "rules": [
     {
-      "description": "caps lock (⇪) as control (⌃) (except with tab and spacebar) (Terminal, X11, IntelliJ)",
+      "description": "caps lock (⇪) as control (⌃) (except with tab and spacebar) (Terminal, X11, IntelliJ, AndroidStudio)",
       "manipulators": [
         {
           "type": "basic",
@@ -25,7 +25,8 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^com\\.jetbrains\\.intellij\\.ce$"
+                "^com\\.jetbrains\\.intellij\\.ce$",
+                "^com\\.google\\.android\\.studio$"
               ]
             }
           ]
@@ -54,7 +55,8 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^com\\.jetbrains\\.intellij\\.ce$"
+                "^com\\.jetbrains\\.intellij\\.ce$",
+                "^com\\.google\\.android\\.studio$"
               ]
             }
           ]
@@ -83,7 +85,8 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^com\\.jetbrains\\.intellij\\.ce$"
+                "^com\\.jetbrains\\.intellij\\.ce$",
+                "^com\\.google\\.android\\.studio$"
               ]
             }
           ]
@@ -114,7 +117,8 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^com\\.jetbrains\\.intellij\\.ce$"
+                "^com\\.jetbrains\\.intellij\\.ce$",
+                "^com\\.google\\.android\\.studio$"
               ]
             }
           ]
@@ -140,7 +144,8 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^com\\.jetbrains\\.intellij\\.ce$"
+                "^com\\.jetbrains\\.intellij\\.ce$",
+                "^com\\.google\\.android\\.studio$"
               ]
             }
           ]
