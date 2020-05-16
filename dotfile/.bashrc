@@ -33,7 +33,7 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export BREW_HOME=/usr/local
 export MONO_HOME=/Applications/Unity/MonoDevelop.app/Contents/Frameworks/Mono.framework/Commands
 #export QT_HOME=$HOME/local/Qt5.1.1/5.1.1/clang_64/bin
-export OPENSSL_HOME=/usr/local/opt/openssl
+export OPENSSL_HOME=/usr/local/opt/openssl@1.1
 
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/work/go
@@ -41,6 +41,8 @@ export GO15VENDOREXPERIMENT=1
 
 export LDFLAGS="$LDFLAGS -L$OPENSSL_HOME/lib"
 export CFLAGS="$CFLAGS -I$OPENSSL_HOME/include -I$(xcrun --show-sdk-path)/usr/include"
+
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH $OPENSSL_HOME/lib/pkgconfig"
 
 export PATH=$ANDROID_HOME/platform-tools:$OPENSSL_HOME/bin:$GOROOT/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$PATH
 
