@@ -3,8 +3,9 @@ if [ -f /etc/bashrc ]; then
 fi
 
 git_branch() {
-    git status >/dev/null 2>&1 || return
-    git status | awk 'BEGIN{ printf "(" } /^On branch/{ printf $3 } /^HEAD/{ printf $2" "$3" "$4 } /^Changes/{ printf "*" } END{ printf ")" }'
+    BRANCH=`git branch --show-current 2>/dev/null` || return
+    MODIFIED=`if [ $(git status -s | grep -vc '??') -gt 0 ]; then echo -n '*'; fi`
+    echo "($BRANCH$MODIFIED)"
 }
 git_stash() {
     COUNT=`git stash list 2>/dev/null | grep -c ".*"`

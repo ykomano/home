@@ -21,6 +21,15 @@
           ],
           "conditions": [
             {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627
+                }
+              ]
+            },
+            {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
@@ -51,6 +60,15 @@
           ],
           "conditions": [
             {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627
+                }
+              ]
+            },
+            {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
@@ -80,6 +98,15 @@
             }
           ],
           "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627
+                }
+              ]
+            },
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
@@ -113,6 +140,15 @@
           ],
           "conditions": [
             {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627
+                }
+              ]
+            },
+            {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.Terminal$",
@@ -139,6 +175,15 @@
             }
           ],
           "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627
+                }
+              ]
+            },
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
